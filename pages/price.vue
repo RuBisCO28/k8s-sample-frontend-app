@@ -1,6 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div>
-    <NuxtPage />
+    <h1>料金ページ</h1>
+    <hr />
   </div>
 </template>
