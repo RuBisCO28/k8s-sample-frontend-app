@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const { data: hello } = await useFetch('api/hello', { server: false });
+</script>
 <template>
   <div>
-    <h1>料金ページ</h1>
-    <hr />
+    <p>{{ hello }}</p>
   </div>
 </template>
