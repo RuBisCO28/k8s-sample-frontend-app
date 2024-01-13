@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       '/api/**': {
         proxy: process.env.BASE_API_URL
           ? `${process.env.BASE_API_URL}/**`
-          : 'http://localhost:8080/api/**'
+          : 'http://sample-backend-app-service:8080/api/**'
       },
     }
   },
