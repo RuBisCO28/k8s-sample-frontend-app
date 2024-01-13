@@ -4,9 +4,9 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
       '/api/**': {
-        proxy: process.env.BASE_API_URL
-          ? `${process.env.BASE_API_URL}/**`
-          : 'http://sample-backend-app-service:8080/api/**'
+        proxy: {
+          to: 'http://sample-backend-app-service:8080/api/**'
+        },
       },
     }
   },
