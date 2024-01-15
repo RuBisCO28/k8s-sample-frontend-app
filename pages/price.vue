@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  const { data: hello } = await useFetch('http://sample-backend-app-service:8080/api/hello', { server: false });
+  const { data: hello } = await useFetch('http://127.0.0.1:8080/api/hello', { server: false });
 </script>
 <template>
   <div>
